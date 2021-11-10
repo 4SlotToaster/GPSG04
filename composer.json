@@ -13,7 +13,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "league/oauth2-client": "^2.6",
-        "microsoft/microsoft-graph": "^1.40",
+        "microsoft/microsoft-graph": "^1.43",
         "nexmo/laravel": "^2.4"
     },
     "require-dev": {
