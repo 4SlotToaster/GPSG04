@@ -9,5 +9,5 @@ Route::get('/callback', 'AuthController@callback');
 Route::get('/calendar', 'CalendarController@calendar');
 
 
-Route::get('/appointment', 'AppointmentController@index');
+Route::get('/appointments', 'AppointmentController@index');
 Route::get('/appointment/{appointment}', 'AppointmentController@ShowAppointment');

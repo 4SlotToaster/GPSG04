@@ -1,6 +1,7 @@
+<?php
 @extends('layout')
 
-<x-layout>
+@section('content')
     @foreach($appointment as $appointments)
         <article>
         <h1>
@@ -13,4 +14,4 @@
             </div>
         </article>
     @endforeach
-</x-layout>
+@endsection
