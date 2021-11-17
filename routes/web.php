@@ -9,13 +9,5 @@ Route::get('/callback', 'AuthController@callback');
 Route::get('/calendar', 'CalendarController@calendar');
 
 
-Route::get('/appointment/', function (){
-    return view('appointments',[
-        'appointments' => Appointment::all()
-    ]);
-});
-Route::get('/appointment/{appointment}', function ($id){
-    return view('appointment',[
-        'appointment' => Appointment::findOrFail($id)
-    ]);
-});
+Route::get('/appointment', 'AppointmentController@index');
+Route::get('/appointment/{appointment}', 'AppointmentController@ShowAppointment');
