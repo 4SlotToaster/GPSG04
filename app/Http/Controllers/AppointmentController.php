@@ -6,10 +6,8 @@ use App\Models\Appointment;
 class AppointmentController extends Controller
 {
 
-        public function index(Appointment $appointment){
-            return view('appointments',[
-                'appointments' => Appointment::all()
-            ]);
+        public function index(){
+            return view('appointments.index',['appointments' => Appointment::all()]);
         }
 
         public function showAppointment(int $id){

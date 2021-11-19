@@ -1,11 +1,10 @@
-<?php
 @extends('layout')
 
 @section('content')
-    @foreach($appointment as $appointments)
+    @foreach($appointments as $appointment)
         <article>
         <h1>
-            <a href="/appointments/{{$appointment > id}}}">
+            <a href="/appointments/{{$appointment > id}}">
                 {{$appointment > starts_at}}
             </a>
         </h1>

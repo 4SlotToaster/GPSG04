@@ -10,4 +10,4 @@ Route::get('/calendar', 'CalendarController@calendar');
 
 
 Route::get('/appointments', 'AppointmentController@index');
-Route::get('/appointment/{appointment}', 'AppointmentController@ShowAppointment');
+Route::get('/appointments/{appointment}', 'AppointmentController@ShowAppointment');
