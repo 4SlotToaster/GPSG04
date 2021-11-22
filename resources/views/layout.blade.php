@@ -40,11 +40,11 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="/" class="nav-link {{$_SERVER['REQUEST_URI'] == '/' ? ' active' : ''}}">Home</a>
+                            <a href="/" class="nav-link">Home</a>
                         </li>
                         @if(isset($userName))
                             <li class="nav-item" data-turbolinks="false">
-                                <a href="/calendar" class="nav-link{{$_SERVER['REQUEST_URI'] == '/calendar' ? ' active' : ''}}">Calendar</a>
+                                <a href="/calendar" class="nav-link">Calendar</a>
                             </li>
                         @endif
                     </ul>
