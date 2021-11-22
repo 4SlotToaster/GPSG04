@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'HomeController@welcome')->name('home')->middleware('guest');
+Route::get('/', 'HomeController@welcome')->name('home');
 Route::get('/signin', 'AuthController@signin');
 Route::get('/signout', 'AuthController@signout');
 Route::get('/callback', 'AuthController@callback');
