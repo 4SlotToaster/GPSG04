@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f6d6cdeaf037534f1481caa1890b6e1",
+    "content-hash": "19d71dae5b704143f91da35ffae139df",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2110,16 +2110,16 @@
         },
         {
             "name": "microsoft/microsoft-graph",
-            "version": "1.40.0",
+            "version": "1.43.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microsoftgraph/msgraph-sdk-php.git",
-                "reference": "cabe2284006d82290b1ad4dae60a1b9a66218ddc"
+                "reference": "8a4ac252ac1f114d884a9c142b971f1f8ac63f85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/cabe2284006d82290b1ad4dae60a1b9a66218ddc",
-                "reference": "cabe2284006d82290b1ad4dae60a1b9a66218ddc",
+                "url": "https://api.github.com/repos/microsoftgraph/msgraph-sdk-php/zipball/8a4ac252ac1f114d884a9c142b971f1f8ac63f85",
+                "reference": "8a4ac252ac1f114d884a9c142b971f1f8ac63f85",
                 "shasum": ""
             },
             "require": {
@@ -2130,7 +2130,7 @@
             },
             "require-dev": {
                 "mikey179/vfsstream": "^1.2",
-                "phpstan/phpstan": "^0.12.90",
+                "phpstan/phpstan": "^0.12.90 || ^1.0.0",
                 "phpunit/phpunit": "^8.0 || ^9.0"
             },
             "type": "library",
@@ -2155,9 +2155,9 @@
             "homepage": "https://developer.microsoft.com/en-us/graph",
             "support": {
                 "issues": "https://github.com/microsoftgraph/msgraph-sdk-php/issues",
-                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.40.0"
+                "source": "https://github.com/microsoftgraph/msgraph-sdk-php/tree/1.43.0"
             },
-            "time": "2021-09-23T20:30:10+00:00"
+            "time": "2021-11-04T11:05:50+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -8743,5 +8743,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

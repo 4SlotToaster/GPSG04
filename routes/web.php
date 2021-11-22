@@ -7,3 +7,7 @@ Route::get('/signin', 'AuthController@signin');
 Route::get('/signout', 'AuthController@signout');
 Route::get('/callback', 'AuthController@callback');
 Route::get('/calendar', 'CalendarController@calendar');
+
+
+Route::get('/appointments', 'AppointmentController@index');
+Route::get('/appointments/{appointment}', 'AppointmentController@ShowAppointment');
