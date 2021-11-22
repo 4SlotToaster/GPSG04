@@ -9,6 +9,11 @@
             <p>Use the navigation bar at the top of the page to get started.</p>
         @else
             <a href="/signin" class="btn btn-primary btn-large">Click here to sign in</a>
+            <div>
+                @include('managers.create')
+                @include('visitors.create')
+                @include('appointments.create')
+            </div>
         @endif
     </div>
 @endsection

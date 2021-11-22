@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Manager;
+use App\Models\Visitor;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -15,6 +17,8 @@ class Controller extends BaseController
     public function loadViewData()
     {
         $viewData = [];
+        $viewData['managers'] = Manager::all();
+        $viewData['visitors'] = Visitor::all();
         // Check for flash errors
         if (session('error')) {
             $viewData['error'] = session('error');

@@ -17,14 +17,14 @@ class CreateAppointmentsTable extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->foreignId('user_id');
+//            $table->foreignId('user_id');
             $table->foreignId('manager_id');
             $table->foreignId('visitor_id');
 
             $table->dateTime('starts_at');
             $table->dateTime('ends_at');
 
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+//            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('manager_id')->references('id')->on('managers')->onDelete('cascade');
             $table->foreign('visitor_id')->references('id')->on('visitors')->onDelete('cascade');
         });

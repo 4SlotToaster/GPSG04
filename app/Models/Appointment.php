@@ -9,9 +9,20 @@ class Appointment extends Model
 {
     use HasFactory;
 
-        protected $fillable = [
-            'name',
-            'email',
-            'password',
-        ];
+    protected $guarded = [];
+
+    public function manager()
+    {
+        return $this->belongsTo(Manager::class);
+    }
+
+    public function visitor()
+    {
+        return $this->belongsTo(Visitor::class);
+    }
+
+    public function path()
+    {
+        return route('appointment.show', $this);
+    }
 }

@@ -21,7 +21,7 @@ class CreateVisitorsTable extends Migration
             $table->string('prefix', 10);
             $table->string('last_name', 15);
             $table->string('email', 50);
-            $table->string('license_plate', 8);
+            $table->string('license_plate', 8)->nullable();
         });
     }
 
